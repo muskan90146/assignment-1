@@ -4,7 +4,7 @@ import { Button } from "./ui/button"
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center pl-20 py-10">
-        <div className="lg:w-1/2 text-left ">
+        <div className="lg:w-1/2 text-left z-10">
             <h1 className="text-6xl font-bold flex flex-wrap mb-4">
                 Make the best financial decisions
             </h1>
@@ -39,8 +39,35 @@ const Hero = () => {
             />
         </div>
 
+        <Image
+            src="/red.svg"
+            alt="hero"
+            width={600}
+            height={600}
+            className="absolute top-0 right-0"
+        />
+        <Image 
+            src="/redyellow.svg" 
+            alt="hero" 
+            width={400} 
+            height={400} 
+            className="absolute top-28 left-36"
+        />
 
-        
+        <Image
+            src="/star.svg"
+            alt="hero"
+            width={80}
+            height={80}
+            className="absolute bottom-24 left-96"
+        />
+        <Image
+            src="/star.svg"
+            alt="hero"
+            width={40}
+            height={40}
+            className="absolute top-32 left-5"
+        />
     </div>
 
   )
