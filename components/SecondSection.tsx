@@ -26,7 +26,7 @@ const SecondSection = () => {
     }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center flex-wrap my-7">
+    <div className="flex flex-col lg:flex-row items-center flex-wrap my-5">
 
         <div className="lg:w-1/2 flex flex-col items-center space-y-4 max-md:w-full z-10">
             <Image 
@@ -39,7 +39,7 @@ const SecondSection = () => {
             />
         </div>
 
-        <div className="lg:w-1/2 text-left z-10" id="second_section_a">
+        <div className="lg:w-1/2 text-left z-10 max-lg:p-5" id="second_section_a">
             <p className="flex font-regular text-md mb-4 text-red-500">
                 Features
             </p>

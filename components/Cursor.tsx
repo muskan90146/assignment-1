@@ -28,7 +28,7 @@ const Cursor = () => {
     };
   }, []);
 
-  return <div ref={cursorRef} className="cursor"></div>;
+  return <div ref={cursorRef} className="cursor max-lg:hidden"></div>;
 };
 
 export default Cursor;

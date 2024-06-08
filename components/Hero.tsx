@@ -19,8 +19,8 @@ const Hero = () => {
     },[])
 
   return (
-    <div className="flex flex-col lg:flex-row items-center pl-20 py-10 flex-wrap my-7">
-        <div className="lg:w-1/2 text-left z-10" id="lefthero">
+    <div className="flex flex-col lg:flex-row items-center lg:pl-20 py-10 flex-wrap my-7">
+        <div className="lg:w-1/2 text-left z-10 max-lg:p-5" id="lefthero">
             <h1 className="text-6xl font-bold flex flex-wrap mb-4">
                 Make the best financial decisions
             </h1>
@@ -28,7 +28,7 @@ const Hero = () => {
                 Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
             </p>
             <Button>Get Started</Button>
-            <Image src="/hero1.svg" alt="hero" width={450} height={450} />
+            <Image src="/hero1.svg" alt="hero" width={450} height={450} className="max-lg:w-[300px] max-lg:h-[300px]"/>
         </div>
 
         <div className="lg:w-1/2 flex flex-col items-center lg:items-end space-y-4 max-lg:hidden">
@@ -70,7 +70,7 @@ const Hero = () => {
             alt="hero" 
             width={400} 
             height={400} 
-            className="absolute top-28 left-36"
+            className="absolute lg:top-28 lg:left-36"
             id="lefthero"
         />
 
@@ -79,7 +79,7 @@ const Hero = () => {
             alt="hero"
             width={80}
             height={80}
-            className="absolute top-3/4 left-1/3 rotate-45 max-md:top-2/3"
+            className="absolute lg:top-3/4 lg:left-1/3 rotate-45 max-md:top-2/3 max-lg:hidden"
             id="lefthero"
         />
         <Image
@@ -87,7 +87,7 @@ const Hero = () => {
             alt="hero"
             width={40}
             height={40}
-            className="absolute top-32 left-5 rotate-45"
+            className="absolute lg:top-32 lg:left-5 rotate-45 max-lg:top-28 max-lg:right-5"
             id="lefthero"
         />
 
