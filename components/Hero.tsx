@@ -14,11 +14,13 @@ const Hero = () => {
         gsap.from("#red", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
         gsap.from("#redyellow", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
         gsap.from("#star", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
+
+        gsap.from("#lefthero", {duration: 1, x: -100, y: -100, rotate: -45, scale: 0, ease: "power2.inOut"})
     },[])
 
   return (
     <div className="flex flex-col lg:flex-row items-center pl-20 py-10 flex-wrap my-7">
-        <div className="lg:w-1/2 text-left z-10">
+        <div className="lg:w-1/2 text-left z-10" id="lefthero">
             <h1 className="text-6xl font-bold flex flex-wrap mb-4">
                 Make the best financial decisions
             </h1>
