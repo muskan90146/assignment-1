@@ -71,6 +71,7 @@ const Hero = () => {
             width={400} 
             height={400} 
             className="absolute top-28 left-36"
+            id="lefthero"
         />
 
         <Image
@@ -79,6 +80,7 @@ const Hero = () => {
             width={80}
             height={80}
             className="absolute top-3/4 left-1/3 rotate-45 max-md:top-2/3"
+            id="lefthero"
         />
         <Image
             src="/star.svg"
@@ -86,6 +88,7 @@ const Hero = () => {
             width={40}
             height={40}
             className="absolute top-32 left-5 rotate-45"
+            id="lefthero"
         />
 
          
