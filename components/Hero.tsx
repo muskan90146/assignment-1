@@ -1,7 +1,21 @@
+'use client'
+
 import Image from "next/image"
 import { Button } from "./ui/button"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const Hero = () => {
+
+    useGSAP(()=>{
+        gsap.from("#tilted2", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
+        gsap.from("#iPhone-13-Pro-Front", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
+        gsap.from("#tiltediphone", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
+        gsap.from("#red", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
+        gsap.from("#redyellow", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
+        gsap.from("#star", {duration: 1, x: 100, y: -100, rotate: 45, scale: 0, ease: "power2.inOut"})
+    },[])
+
   return (
     <div className="flex flex-col lg:flex-row items-center pl-20 py-10 flex-wrap my-7">
         <div className="lg:w-1/2 text-left z-10">
@@ -22,6 +36,7 @@ const Hero = () => {
                 width={500} 
                 height={500} 
                 className="absolute top-10 right-20 z-30"
+                id="tilted2"
             />
             <Image 
                 src="/iPhone-13-Pro-Front.svg" 
@@ -29,6 +44,7 @@ const Hero = () => {
                 width={500} 
                 height={500} 
                 className="absolute top-20 right-0 z-20"
+                id="iPhone-13-Pro-Front"
             />
             <Image 
                 src="/tiltediphone.svg" 
@@ -36,6 +52,7 @@ const Hero = () => {
                 width={500} 
                 height={500} 
                 className="absolute top-0 right-0 z-10 pt-8"
+                id="tiltediphone"
             />
         </div>
 
